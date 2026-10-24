@@ -1,0 +1,94 @@
+{
+  "settings": {
+    "pageTitle": "Ajayi Samuel — SA Imagery | Cinematographer, Videographer, Photographer",
+    "description": "Ajayi Samuel (SA Imagery) — cinematographer, videographer and photographer telling African stories for brands like Web3bridge, Amplify Africa and AllThings Africa.",
+    "tagline": "Telling African stories, one frame at a time.",
+    "status": "Open for bookings"
+  },
+  "contact": {
+    "email": "",
+    "bookingUrl": "",
+    "socials": [
+      { "label": "Instagram", "url": "" },
+      { "label": "YouTube", "url": "" },
+      { "label": "LinkedIn", "url": "" },
+      { "label": "X / Twitter", "url": "" }
+    ]
+  },
+  "hero": {
+    "firstName": "Ajayi",
+    "lastName": "Samuel",
+    "script": "SA Imagery",
+    "intro": "Serious about the craft, playful behind the scenes. I shoot films, stories and stills for brands building Africa's next chapter — and when the camera's down, I'm on the pitch.",
+    "roles": "Cinematographer — Videographer — Photographer",
+    "rolesShort": "Cine · Video · Photo",
+    "photos": [
+      { "image": "", "alt": "" },
+      { "image": "", "alt": "" },
+      { "image": "", "alt": "" }
+    ]
+  },
+  "marquee": ["Cinematography", "Videography", "Photography", "Video editing"],
+  "brands": {
+    "title": "Trusted by brands\ntelling Africa's story",
+    "blurb": "From Web3 education to pan-African culture — Samuel leads media, shoots and cuts content for teams moving the continent forward.",
+    "items": [
+      { "name": "Web3bridge", "role": "Media Lead · Cinematographer · Video Editor", "logo": "/media/logos/web3bridge.png", "tileColor": "#ffffff" },
+      { "name": "Amplify Africa", "role": "Video Editor", "logo": "/media/logos/amplify-africa.png", "tileColor": "#ffffff" },
+      { "name": "AllThings Africa", "role": "Video Editor", "logo": "/media/logos/allthings-africa.png", "tileColor": "#f59c21" }
+    ]
+  },
+  "about": {
+    "title": "Behind\nthe lens",
+    "lead": "I'm Ajayi Samuel — the eye behind SA Imagery. I'm a cinematographer, videographer and photographer who takes the work seriously and the process a little less so.",
+    "body": "I've led media at Web3bridge and cut stories for Amplify Africa and AllThings Africa. Hand me a Sony and a deadline and I'll hand you something worth watching. Hand me a football and you've lost me for the afternoon.",
+    "photo": "",
+    "photoAlt": "",
+    "polaroid": "",
+    "polaroidAlt": "",
+    "polaroidCaption": "Gunner for life",
+    "traits": ["Serious", "Hardworking", "Camera-obsessed", "Football-mad", "Arsenal fan"],
+    "facts": [
+      { "label": "Brand", "value": "SA Imagery" },
+      { "label": "Roles", "value": "Cinematographer · Videographer · Photographer · Editor" },
+      { "label": "Shoots on", "value": "Sony" },
+      { "label": "Off duty", "value": "On the pitch — or watching Arsenal" }
+    ]
+  },
+  "services": {
+    "title": "What I do",
+    "blurb": "Four crafts, one eye. Book them on their own or bring me in end-to-end — from the first frame to the final export.",
+    "items": [
+      { "title": "Cinematography", "description": "Cinematic brand films, documentaries and event films — lit, framed and graded to feel like cinema.", "deliverables": "Brand films · Docs · Event films", "image": "", "alt": "" },
+      { "title": "Videography", "description": "Clean, reliable coverage for conferences, interviews and campaigns — captured on time, every time.", "deliverables": "Events · Interviews · Social", "image": "", "alt": "" },
+      { "title": "Photography", "description": "Portraits, events and editorial stills with real character — the moments between the moments.", "deliverables": "Portraits · Events · Editorial", "image": "", "alt": "" },
+      { "title": "Video editing", "description": "Story-first edits with colour and sound, for long-form and short-form, from rough cut to delivery.", "deliverables": "Long-form · Reels · Colour", "image": "", "alt": "" }
+    ]
+  },
+  "work": {
+    "title": "Selected work",
+    "blurb": "Brand films, event coverage, edits and stills. Full project links are on the way — this reel is loading.",
+    "projects": [
+      { "title": "Project title", "client": "Web3bridge — Brand film", "year": "20XX", "categories": ["films", "brand"], "thumbnail": "", "link": "" },
+      { "title": "Project title", "client": "Amplify Africa — Video edit", "year": "20XX", "categories": ["edits", "brand"], "thumbnail": "", "link": "" },
+      { "title": "Project title", "client": "AllThings Africa — Video edit", "year": "20XX", "categories": ["edits", "brand"], "thumbnail": "", "link": "" },
+      { "title": "Project title", "client": "Event coverage", "year": "20XX", "categories": ["events", "films"], "thumbnail": "", "link": "" },
+      { "title": "Project title", "client": "Photography series", "year": "20XX", "categories": ["photography"], "thumbnail": "", "link": "" }
+    ],
+    "allWorkUrl": ""
+  },
+  "gear": {
+    "title": "The kit behind\nthe frame",
+    "body": "A Sony shooter through and through. Light, fast kit that moves with the story — on set, on stage or on the sideline.",
+    "photo": "",
+    "photoAlt": "",
+    "badge": "Sony α",
+    "items": [
+      { "label": "Camera", "value": "Sony Alpha mirrorless (model TBC)" },
+      { "label": "Stabiliser", "value": "Handheld gimbal (model TBC)" },
+      { "label": "Support", "value": "Tripods & fluid heads" },
+      { "label": "Audio", "value": "Wireless mics & monitoring headphones" },
+      { "label": "Edit suite", "value": "Software TBC — e.g. Premiere Pro, After Effects, Lightroom" }
+    ]
+  }
+}

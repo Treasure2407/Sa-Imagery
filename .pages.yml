@@ -1,0 +1,160 @@
+# Pages CMS config (https://pagescms.org) — the editor Samuel uses to update the site.
+# Every save commits to GitHub and Vercel rebuilds the site in about a minute.
+media:
+  input: media
+  output: /media
+
+content:
+  - name: portfolio
+    label: Portfolio
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: settings
+        label: General
+        type: object
+        fields:
+          - { name: pageTitle, label: Browser tab title, type: string }
+          - { name: description, label: Search engine description, type: text }
+          - { name: tagline, label: Tagline, type: string, description: Shown under the hero and in the footer. }
+          - { name: status, label: Booking status, type: string, description: "Next to the REC dot in the top bar, e.g. Open for bookings." }
+
+      - name: contact
+        label: Contact & booking
+        type: object
+        fields:
+          - { name: email, label: Email address, type: string, description: Leave empty to show "Email coming soon". }
+          - { name: bookingUrl, label: Booking link, type: string, description: "Where every Book a shoot button goes (e.g. a Calendly or form link). Empty = opens an email, or scrolls to Contact." }
+          - name: socials
+            label: Social links
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Name, type: string }
+              - { name: url, label: Link, type: string }
+
+      - name: hero
+        label: Hero (top of page)
+        type: object
+        fields:
+          - { name: firstName, label: First name (big), type: string }
+          - { name: lastName, label: Last name (big), type: string }
+          - { name: script, label: Handwritten text, type: string }
+          - { name: intro, label: Intro paragraph, type: text }
+          - { name: roles, label: Roles line (desktop), type: string }
+          - { name: rolesShort, label: Roles line (phone), type: string }
+          - name: photos
+            label: Photo deck
+            description: The first photo shows in front; the deck shuffles every 2 seconds. Add as many as you like (3 or more looks best).
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Photo, type: image }
+              - { name: alt, label: Describe the photo, type: string, description: For screen readers and search engines. }
+
+      - name: marquee
+        label: Scrolling band words
+        type: string
+        list: true
+
+      - name: brands
+        label: Brands
+        type: object
+        fields:
+          - { name: title, label: Heading, type: text, description: Use a new line to split it onto two lines. }
+          - { name: blurb, label: Paragraph, type: text }
+          - name: items
+            label: Brands
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Brand name, type: string }
+              - { name: role, label: Your role, type: string }
+              - { name: logo, label: Logo, type: image }
+              - { name: tileColor, label: Tile colour, type: string, description: "Background behind the logo, e.g. #ffffff" }
+
+      - name: about
+        label: About
+        type: object
+        fields:
+          - { name: title, label: Heading, type: text }
+          - { name: lead, label: First paragraph (large), type: text }
+          - { name: body, label: Second paragraph, type: text }
+          - { name: photo, label: Main photo, type: image }
+          - { name: photoAlt, label: Describe the main photo, type: string }
+          - { name: polaroid, label: Polaroid photo, type: image }
+          - { name: polaroidAlt, label: Describe the polaroid photo, type: string }
+          - { name: polaroidCaption, label: Polaroid caption, type: string }
+          - { name: traits, label: Personality tags, type: string, list: true }
+          - name: facts
+            label: Quick facts
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Label, type: string }
+              - { name: value, label: Value, type: string }
+
+      - name: services
+        label: Services
+        type: object
+        fields:
+          - { name: title, label: Heading, type: text }
+          - { name: blurb, label: Paragraph, type: text }
+          - name: items
+            label: Services
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Service name, type: string }
+              - { name: description, label: Description, type: text }
+              - { name: deliverables, label: What's included, type: string }
+              - { name: image, label: Photo, type: image }
+              - { name: alt, label: Describe the photo, type: string }
+
+      - name: work
+        label: Work / projects
+        type: object
+        fields:
+          - { name: title, label: Heading, type: text }
+          - { name: blurb, label: Paragraph, type: text }
+          - name: projects
+            label: Projects
+            description: The first two show large on desktop. Drag to reorder.
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Project title, type: string }
+              - { name: client, label: Client — type, type: string, description: "e.g. Web3bridge — Brand film" }
+              - { name: year, label: Year, type: string }
+              - name: categories
+                label: Filters
+                type: select
+                options:
+                  multiple: true
+                  values:
+                    - { value: films, label: Films }
+                    - { value: brand, label: Brand content }
+                    - { value: events, label: Events }
+                    - { value: photography, label: Photography }
+                    - { value: edits, label: Edits }
+              - { name: thumbnail, label: Thumbnail (16:9 still), type: image }
+              - { name: link, label: Video or project link, type: string, description: "YouTube, Vimeo, Instagram, Drive… Opens in a new tab." }
+          - { name: allWorkUrl, label: View all work link, type: string, description: "Optional, e.g. a YouTube channel or showreel." }
+
+      - name: gear
+        label: Gear
+        type: object
+        fields:
+          - { name: title, label: Heading, type: text }
+          - { name: body, label: Paragraph, type: text }
+          - { name: photo, label: Photo, type: image }
+          - { name: photoAlt, label: Describe the photo, type: string }
+          - { name: badge, label: Text on the photo, type: string }
+          - name: items
+            label: Kit list
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Item, type: string }
+              - { name: value, label: Details, type: string }

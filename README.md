@@ -23,3 +23,7 @@ Any image left empty shows a striped "+ Add photo" placeholder on the site.
 ## Local preview
 
 From the project root: `node .claude/serve.mjs` → http://localhost:5173 (rebuilds on each reload).
+
+## Deploys
+
+Every push to `main` (including Pages CMS saves) deploys to https://sa-imagery.vercel.app via Vercel's Git integration.
